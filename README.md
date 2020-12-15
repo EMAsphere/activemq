@@ -1,3 +1,14 @@
+# EMAsphere
+We forked this repository because the ActiveMQ image it generates is of good quality, and there is no official Apache ActiveMQ image available on Docker Hub.
+
+All the scripts related to its push toward our ECRs are located in https://github.com/EMAsphere/emasphere/tree/develop/admin/containerization/ActiveMQ .
+
+This base image is then used to built a customized version of the ActiveMQ broker, with the same _activemq.xml_ configuration file as the one used on the AWS service, AmazonMQ.
+
+The only modification of this forked repository, compared to its "parent", is this section of the `README.md` file.
+
+---
+
 ## Dockerfile to build a ActiveMQ container image.
 
 Based on openjdk:8-jre-alpine, as lightweight as possible. 
